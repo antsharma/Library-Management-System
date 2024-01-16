@@ -127,7 +127,7 @@ INSERT INTO `issue_date` (`issue_id`, `book_id`, `user_id`, `date`) VALUES
 CREATE TABLE `users` (
   `user_id` int(100) NOT NULL,
   `name` varchar(300) NOT NULL,
-  `phone` varchar(11) NOT NULL,
+  `phone` varchar(10) NOT NULL,
   `email` varchar(300) NOT NULL,
   `is_admin` tinyint(1) NOT NULL,
   `password` varchar(300) NOT NULL,
@@ -140,13 +140,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `phone`, `email`, `is_admin`, `password`, `address`, `gender`) VALUES
-(1, 'Abrar', '01711568524', 'a.zshahriar@gmail.com', 1, '1234', 'Mirpur DOHS', 'Male'),
-(2, 'Arefin', '01764431859', 'arefin@gmail.com', 0, 'yellow', 'Mirpur 13', 'Male'),
-(4, 'Rafin', '01924184941', 'rafin.ryan.07@outlook.com', 0, 'horse', 'Mirpur 13, Dhaka', 'Male'),
-(5, 'Shimi', '01723645289', 'shimi@gmail.com', 0, 'abcd', 'Uttara, Sector 13', 'Female'),
-(6, 'Jhuma', '01782963175', 'fjhuma@gmail.com', 0, 'qwerty', 'Banani, Chairman Bari', 'Female'),
-(7, 'Istiak', '01932478293', 'istiakisha69@gmail.com', 0, 'istiak', 'Baily Road', 'Male'),
-(8, 'Fahim Ahmed', '01726972364', 'fahim152@gmail.com', 0, 'fahimma', 'Kallayanpur', 'Male');
+(1, 'Abrar', '1711568524', 'a.zshahriar@gmail.com', 1, '1234', 'Mirpur DOHS', 'Male'),
+(2, 'Arefin', '1764431859', 'arefin@gmail.com', 0, 'yellow', 'Mirpur 13', 'Male'),
+(4, 'Rafin', '1924184941', 'rafin.ryan.07@outlook.com', 0, 'horse', 'Mirpur 13, Dhaka', 'Male'),
+(6, 'Jhuma', '1782963175', 'fjhuma@gmail.com', 0, 'qwerty', 'Banani, Chairman Bari', 'Female'),
+(7, 'Istiak', '1932478293', 'istiakisha69@gmail.com', 0, 'istiak', 'Baily Road', 'Male'),
+(8, 'Fahim Ahmed', '1726972364', 'fahim152@gmail.com', 0, 'fahimma', 'Kallayanpur', 'Male');
 
 --
 -- Indexes for dumped tables
